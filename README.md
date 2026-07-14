@@ -38,7 +38,7 @@ The charge pump inverter was designed using:
 The circuit was modeled and verified entirely in LTspice through transient analysis.
 
 ---
-Working Principle
+# Working Principle
 
 The circuit operates as a switched-capacitor charge pump inverter, converting a single +5V DC supply into a negative voltage without requiring an additional negative power source. A 100 kHz clock signal periodically charges and discharges a flying capacitor, transferring charge in such a way that the output node is driven below ground potential.
 
