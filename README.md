@@ -50,11 +50,11 @@ Phase 2: Charge Transfer and Voltage Inversion
 
 When the clock transitions low (0V), the charged capacitor retains its stored voltage. Since the left terminal of the capacitor is now pulled to ground, the right terminal is forced to approximately -5V relative to ground. Diode D2 becomes forward biased and transfers this negative potential to the output capacitor.
 
-Output Filtering
+Output Filtering:
 
 The output capacitor stores charge delivered during successive clock cycles and smooths the generated negative voltage. As the clock continues switching, the output capacitor is repeatedly refreshed, maintaining a stable negative DC voltage with minimal ripple.
 
-Op-Amp Validation
+Op-Amp Validation:
 
 The generated negative rail (VNEG) was connected to the negative supply terminal of an operational amplifier while the positive supply terminal was connected to +5V. A voltage follower configuration was implemented to verify that the generated negative supply could successfully power practical analog circuitry. The simulation confirmed stable op-amp operation using the charge-pump-generated dual-rail supply.
 
